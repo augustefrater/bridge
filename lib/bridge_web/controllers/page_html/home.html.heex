@@ -1,0 +1,25 @@
+<div id="whole_page" style="height: 100%; width: 100%;">
+  <div>
+    hi <span id="user"><%= @conn.params["user"] %></span>
+  </div>
+  <div>
+    <div style="display: flex; justify-content: space-between; padding: 2%;">
+      <div>
+        <h3>Messages:</h3>
+        <ul id="messageList" class="list-unstyled" style="height: 200px; overflow-y: scroll; width: 100%;">
+
+        </ul>
+        <input type="text" id="newMessage" class="form-control">
+      </div>
+      <div>
+        <p>Waiting for 4 players to start</p>
+      </div>
+      <div>
+        <h3>Online:</h3>
+        <ul id="userList" class="list-unstyled">
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
